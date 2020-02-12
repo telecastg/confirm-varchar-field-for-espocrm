@@ -1,0 +1,45 @@
+{
+   "params":[
+      {
+         "name":"required",
+         "type":"bool",
+         "default":false
+      },
+      {
+         "name":"default",
+         "type":"confirm-varchar"
+      },
+      {
+         "name":"maxLength",
+         "type":"int"
+      },
+      {
+         "name":"trim",
+         "type":"bool",
+         "default": true
+      },
+      {
+         "name": "options",
+         "type": "multiEnum"
+      },
+      {
+         "name":"audited",
+         "type":"bool"
+      },
+      {
+         "name":"readOnly",
+         "type":"bool"
+      }
+   ],
+   "validationList": [
+      "required",
+      "maxLength"
+   ],
+   "view": "confirm-varchar:views/fields/confirm-varchar",
+   "filter": true,
+   "personalData": true,
+   "textFilter": true,
+   "textFilterForeign": true,
+   "fullTextSearch": true
+}
+
