@@ -100,7 +100,7 @@ Espo.define('confirm-varchar:views/fields/confirm-varchar', 'views/fields/varcha
         verifyInput: function($originalInput,$confirmInput,$cellContainer) {
             if($originalInput.val().trim() !== $confirmInput.val().trim()){
                 $cellContainer.addClass('has-error');
-                var message = this.translate('inputsMatch', 'labels');
+                var message = this.translate('Input Mismatch', 'labels');
                 Espo.Ui.error(message);
                 return false;
             } else {
