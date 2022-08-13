@@ -101,7 +101,7 @@ Espo.define('confirm-varchar:views/fields/confirm-varchar', 'views/fields/varcha
             if($originalInput.val().trim() !== $confirmInput.val().trim()){
                 $cellContainer.addClass('has-error');
                 var message = this.translate('inputsMatch', 'labels');
-                alert(message);  
+                Espo.Ui.error(message);
                 return false;
             } else {
                 // NOTE: returns true even if both inputs are blank 
